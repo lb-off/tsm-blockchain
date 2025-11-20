@@ -1,0 +1,9 @@
+This file contains the addresses of some of the deployed contracts.
+
+
+Contract addresses :
+
+* Sepolia :
+** DauCoin :   0x790536CeAE90E956031870dCEf1ffC987eF8Ec5C
+** PhineCoin : 0xDf02b88bAC038B60f5fB12D286814e718C26968e
+** AMM :       0x68ec27d22756778E9c66542aA4399206FDf1eC75
