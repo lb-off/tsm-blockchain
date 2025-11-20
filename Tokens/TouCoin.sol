@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 The contract extends the ERC20 contract to be mintable by anyone but up to a certain limit
 defined by the contract owner.
 */
-contract PhineCoin is ERC20 {
+contract TouCoin is ERC20 {
     /*
     This section defines the internal variable of the smart contract. Recall that because
     the smart contract is ERC20, it also inherits all the variables (and functions) of ERC20.sol.
@@ -18,7 +18,7 @@ contract PhineCoin is ERC20 {
     uint256 public max_mint;
     uint256 public max_mint_per_user;
 
-    constructor(uint256 _max_mint, uint256 _max_mint_per_user) ERC20("Phine_coin", "PHC") {
+    constructor(uint256 _max_mint, uint256 _max_mint_per_user) ERC20("Tou_coin", "TOU") {
         /*stores some parameters. 
         max_mint is the max total amount to be minted.
         max_mint_per_user si the total amount a user can mint.
@@ -27,7 +27,7 @@ contract PhineCoin is ERC20 {
         max_mint_per_user = _max_mint_per_user;
     }
 
-    function mint(uint256 amount) external {        
+    function mint(uint256 amount) external {
         //define 1 variables to be used in this function
         address account = msg.sender;
         // make a number of checks to make sure, we do not over-mint.
